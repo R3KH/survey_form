@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SurveyForm</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">r3kh survey form</h1>
+            <p id="description">about video games and stuff</p>
+        </header>
+
+        <section>
+            <form id="survey-form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name..."/>    
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email..."/>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Age</label>
+                    <input id="number" type="number" min="18" max="99" placeholder="Enter your age..."/>
+                </div>
+                <div class="form-group">
+
+                <label for="dropdown">What kind of games are you into ?</label>
+                    <select id="dropdown">
+                        <option>RPG</option>
+                        <option>FPS</option>
+                        <option>CRAFT</option>
+                    </select>
+                </div>
+
+                <fieldset id="radioGrp">
+                    <legend>Are you any good at those ?</legend>
+                    <input type="radio" id="yes" name="skill">
+                    <label for="yes">Yes</label>
+                    <br/>
+                    <input type="radio" id="no" name="skill">
+                    <label for="no">No</label>
+                </fieldset>
+                
+                <fieldset id="checkboxGrp">
+                    <legend>What are you biggest weaknesses ?</legend>
+                    <input type="checkbox" id="stress" name="weak">
+                    <label for="stress">Stress</label>
+                    <br/>
+                    <input type="checkbox" id="anger" name="weak">
+                    <label for="anger">Anger Management</label>
+                    <br/>
+                    <input type="checkbox" id="bad" name="weak">
+                    <label for="bad">I'm just bad</label>
+                </fieldset>
+                
+                <div class="form-group">
+                    <label for="comment">Any other comments ?</label>
+                    <textarea id="comment" placeholder="Type here..." rows="5" cols="33"></textarea>
+                </div>
+
+                <br/>
+                
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
